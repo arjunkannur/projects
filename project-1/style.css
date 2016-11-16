@@ -1,0 +1,47 @@
+
+#color button
+{
+	width:8%;
+	height:15px;
+	border:2px outset ;
+}
+#black {background:black;}
+#white {background: white;}
+#blue {background: blue;}
+#red {background: red;}
+#green {background:green;}
+#yellow {background:yellow;}
+#orange {background: orange;}
+#violet {background: violet;}
+#grey{background:grey;}
+#Tools button
+{
+	width:23%;
+	height:40px;
+	margin-top:5px;
+	color:red;
+	background:grey;
+}
+canvas
+{
+border: 0px none black; 
+} 
+#save a {
+	font-size:20px;
+        color:white;
+}
+#file {opacity:0;}
+h5
+{
+color:grey;
+text-align:right;
+}
+h1
+{
+color:blue;
+text-align:center;
+}
+#save
+{
+text-align:center;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Paint App by Arjun</title>
+<link href="style.css" rel="stylesheet" />
+</head>
+<body background="art-paint-wallpaper-19.jpg">
+<section>
+                        <div id="drawing">
+                        <h1> Paint Application</h1>
+			<div><center> Select The color For Drawing</center> </div>
+
+			<div id="color"><center>
+		
+				<button id="black" onclick="changeColor('black')"></button>
+				<button id="white" onclick="changeColor('white')"></button>
+				<button id="red" onclick="changeColor('red')"></button>
+				<button id="green" onclick="changeColor('green')"></button>
+				<button id="yellow" onclick="changeColor('yellow')"></button>
+				<button id="grey" onclick="changeColor('grey')"></button>
+				<button id="orange" onclick="changeColor('orange')"></button>
+				<button id="blue" onclick="changeColor('blue')"></button>
+				<button id="violet" onclick="changeColor('violet')"></button>
+                                      </center>
+			</div>
+                        <center> Others Tools </center>
+                        <div id="Tools"><center>
+				<button id="openFile" onclick="triggerClick()">Open Image</button>
+				<button id="fillCanvas" onclick="fillCanvas()">Fill</button>
+				<button id="Default" onclick="Default()">Clear</button>
+                                        </center>
+				</div>
+
+<div id="save" >
+		<a id="download" download="image.png" ><u>Download The Image</u></a>
+		</div>
+<input id="file" type="file" accept="image/*"/>
+<p align="center">
+ <canvas id="canvas" width="1000" height="375" style="border:1px solid #000000;">
+</canvas>
+</p>
+</section>
+<script src="main.js">
+</script>
+<h5> paint application by arjun p p</h5>
+</body>
+</html>
+
