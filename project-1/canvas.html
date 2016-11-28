@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Paint App by Arjun</title>
+<title>Color ME</title>
 <link href="style.css" rel="stylesheet" />
 </head>
 <body background="art-paint-wallpaper-19.jpg">
 <section>
                         <div id="drawing">
-                        <h1> Paint Application</h1>
-			<div><center> Select The color For Drawing</center> </div>
+                        <h1> Color Me Paint App</h1>
+			<div id="title1">Select The color For Drawing</div>
 
 			<div id="color"><center>
 		
@@ -23,14 +23,23 @@
 				<button id="violet" onclick="changeColor('violet')"></button>
                                       </center>
 			</div>
-                        <center> Others Tools </center>
                         <div id="Tools"><center>
+                                <button id="start" onclick="start('white')">Start</button>
 				<button id="openFile" onclick="triggerClick()">Open Image</button>
 				<button id="fillCanvas" onclick="fillCanvas()">Fill</button>
 				<button id="Default" onclick="Default()">Clear</button>
+                             
                                         </center>
 				</div>
-
+                         <div id="title2">Select The Brush Size For Drawing</div>
+                         <div id ="brush">
+                                <button id="brushSize1" onclick="changeBrushSize(5)">Size:1</button>	
+				<button id="brushSize2" onclick="changeBrushSize(10)">Size:2</button>
+				<button id="brushSize3" onclick="changeBrushSize(15)">Size:3</button>
+				<button id="brushsize4" onclick="changeBrushSize(20)">Size:4</button>
+                                <button id="brushSize3" onclick="changeBrushSize(25)">Size:5</button>
+				<button id="brushsize4" onclick="changeBrushSize(30)">Size:6</button>
+                                </div>
 <div id="save" >
 		<a id="download" download="image.png" ><u>Download The Image</u></a>
 		</div>
@@ -45,4 +54,3 @@
 <h5> paint application by arjun p p</h5>
 </body>
 </html>
-
