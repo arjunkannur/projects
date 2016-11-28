@@ -1,7 +1,7 @@
 
 #color button
 {
-	width:8%;
+	width:15%;
 	height:15px;
 	border:2px outset ;
 }
@@ -16,7 +16,7 @@
 #grey{background:grey;}
 #Tools button
 {
-	width:23%;
+	width:15%;
 	height:40px;
 	margin-top:5px;
 	color:red;
@@ -44,4 +44,33 @@ text-align:center;
 #save
 {
 text-align:center;
+}
+#color{
+              top: 15%;
+    	width: 5%;
+        height:100%;
+        position:fixed;
+}
+#brush
+{
+top:15%;
+left:85%;
+height:100%;
+position:fixed;
+}
+#title1
+{
+text-align:left;
+color:orange;
+
+}
+
+#title2
+{
+text-align:right;
+color:green;
+top:10%;
+left:80%;
+height:100%;
+ position:fixed;
 }
