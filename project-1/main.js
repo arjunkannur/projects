@@ -1,8 +1,7 @@
 var canvas = document.getElementById('canvas');
 var context = canvas.getContext('2d');
 context.lineWidth=5;
-var down=false;
-
+var down=false;        
 canvas.addEventListener('mousemove',draw);
 
 canvas.addEventListener('mousedown',function() 
@@ -43,10 +42,18 @@ function triggerClick()
 document.getElementById('file').click();
 }
 
-
+function start(color)
+{
+context.strokeStyle=color; context.fillStyle=color;
+context.fillRect(0,0,canvas.width,canvas.height);
+}
 function download() {
     var dt = canvas.toDataURL();
     this.href = dt; 
+}
+function changeBrushSize(size)
+{
+ context.lineWidth = size;
 }
 document.getElementById('download').addEventListener('click', download, false);
 document.getElementById('file').addEventListener('change',function(e)
@@ -69,5 +76,4 @@ document.getElementById('file').addEventListener('change',function(e)
 		URL.revokeObjectURL(temp);
 	});
 });
-
 
